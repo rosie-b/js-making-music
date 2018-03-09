@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+}
+
+.keyboard {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-family: 'Orbitron', sans-serif;
+	color: #1b1f27;
+	text-align: center;
+	background-color: blue;
+}  

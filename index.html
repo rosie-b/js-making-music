@@ -3,24 +3,37 @@
 	<title>Making Music</title>
 	<meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css'>
+	<link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css'>
 	<link rel='stylesheet' type='text/css' href='main.css'>
 	<script src='main.js'></script>
 </head>
 <body>
 	<div class='container'>
-		<h1>Making Music</h1>	
-		<div class='keyboard'>
-			<form name='keys'>
-				<input type='text' id='screen'>
-				<br>
-				<input type='button' id='btnC' value='C' onclick='playNote("C")'>
-				<input type='button' id='btnD' value='D' onclick='playNote("D")'>
-				<input type='button' id='btnE' value='E' onclick='playNote("E")'>
-				<input type='button' id='btnF' value='F' onclick='playNote("F")'>
-				<input type='button' id='btnG' value='G' onclick='playNote("G")'>
-				<input type='button' id='btnA' value='A' onclick='playNote("A")'>
-				<input type='button' id='btnB' value='B' onclick='playNote("B")'>
-			</form>
-		</div>
+		<section>
+			<header>
+				<h1>Making Music</h1>	
+			</header>
+			<div class='keyboard'>
+				<form name='keys'>
+					<div class='row'>
+						<div class='twelve columns'>
+							<input type='text' id='screen'>
+						</div>
+					</div>
+					<div class='row'>
+						<div class='twelve columns'>
+							<input type='button' id='btnC' value='C' onclick='playNote("C")'>
+							<input type='button' id='btnD' value='D' onclick='playNote("D")'>
+							<input type='button' id='btnE' value='E' onclick='playNote("E")'>
+							<input type='button' id='btnF' value='F' onclick='playNote("F")'>
+							<input type='button' id='btnG' value='G' onclick='playNote("G")'>
+							<input type='button' id='btnA' value='A' onclick='playNote("A")'>
+							<input type='button' id='btnB' value='B' onclick='playNote("B")'>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
 	</div>
 </body>

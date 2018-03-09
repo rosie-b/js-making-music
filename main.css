@@ -1,22 +1,43 @@
 body {
     display: flex;
     align-items: center;
-    justify-content: center;
+		justify-content: center;
+		text-align: center;
 	}
 
-.container {
-	width: 100%;
-	max-width: 960px;
-}
-
 .keyboard {
-	width: 100%;
-	max-width: 960px;
+	width: 375px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 200px 20px 0px 20px;
 	box-sizing: border-box;
 	font-family: 'Orbitron', sans-serif;
 	color: #1b1f27;
 	text-align: center;
-	background-color: blue;
-}  
+	background-color: yellow;
+	}  
+
+/* overwrite skeleton CSS */
+input[type="button"] {
+	height: 150px;
+	width: 30px;
+	padding: 0 5px;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	.keyboard {
+		width: 500px;
+		margin: 0 auto;
+		padding: 250px 20px 0px 20px;
+		box-sizing: border-box;
+		font-family: 'Orbitron', sans-serif;
+		color: #1b1f27;
+		text-align: center;
+		background-color: red;
+		}  
+	input[type="button"] {
+	height: 150px;
+	width: 50px;
+	padding: 0 5px;
+	}
+}

@@ -4,6 +4,11 @@ function id(x) {
 }
 
 function playNote(val) {
+    key(val)
+    id('screen').value = val
+}
+
+function key(val) {
     if (val === 'C') {new Audio("sounds/c.mp3").play()}
     else if (val === 'D') {new Audio("sounds/d.mp3").play()}
     else if (val === 'E') {new Audio("sounds/e.mp3").play()}
@@ -11,6 +16,4 @@ function playNote(val) {
     else if (val === 'G') {new Audio("sounds/g.mp3").play()}
     else if (val === 'A') {new Audio("sounds/a.mp3").play()}
     else if (val === 'B') {new Audio("sounds/b.mp3").play()}
-    id('screen').value = val
 }
-

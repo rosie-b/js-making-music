@@ -3,7 +3,17 @@ body {
     align-items: center;
 		justify-content: center;
 		text-align: center;
+		background-color: #ABB2B9;
 	}
+
+/* background colours by class */
+.C {background-color: #B03A2E;}
+.D {background-color: #6C3483;}
+.E {background-color: #1F618D;}
+.F {background-color: #148F77;}
+.G {background-color: #1E8449;}
+.A {background-color: #B9770E;}
+.B {background-color: #A04000;}
 
 /* overwrite skeleton CSS */
 .container {
@@ -11,42 +21,43 @@ body {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 0px;
+	padding: 50px;
 }
 
 .keyboard {
 	width: 375px;
 	margin: 0 auto;
-	padding: 200px 20px 0px 20px;
+	padding: 20px;
 	box-sizing: border-box;
 	font-family: 'Orbitron', sans-serif;
 	color: #1b1f27;
 	text-align: center;
-	background-color: yellow;
-	}  
+	background-color: #FDFEFE;
+}  
 
 /* overwrite skeleton CSS */
 input[type="button"] {
-	height: 150px;
 	width: 40px;
 	padding: 0 5px;
 }
+
+/* button colours & size */
+#btnC {background-color: #F1948A; height: 200px;}
+#btnD {background-color: #BB8FCE; height: 190px;}
+#btnE {background-color: #7FB3D5; height: 180px;}
+#btnF {background-color: #76D7C4; height: 170px;}
+#btnG {background-color: #7DCEA0; height: 160px;}
+#btnA {background-color: #F8C471; height: 150px;}
+#btnB {background-color: #E59866; height: 140px;}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
 	.keyboard {
 		width: 500px;
-		margin: 0 auto;
-		padding: 250px 20px 0px 20px;
-		box-sizing: border-box;
-		font-family: 'Orbitron', sans-serif;
-		color: #1b1f27;
-		text-align: center;
-		background-color: red;
-		}  
+	}  
 	input[type="button"] {
-	height: 150px;
-	width: 50px;
-	padding: 0 5px;
+		width: 50px;
 	}
 }
+
+

@@ -8,21 +8,16 @@
 	<link rel='stylesheet' type='text/css' href='main.css'>
 	<script src='main.js'></script>
 </head>
-<body>
+<body class='x'>
 	<div class='container'>
 		<section>
-			<header>
-				<h1>Making Music</h1>	
-			</header>
 			<div class='keyboard'>
-				<form name='keys'>
-					<div class='row'>
-						<div class='twelve columns'>
-							<input type='text' id='screen'>
-						</div>
-					</div>
-					<div class='row'>
-						<div class='twelve columns'>
+				<div class='row'>
+					<div class='twelve columns'>
+						<header>
+							<h1>Play me!</h1>	
+						</header>
+									<form name='keys'>
 							<input type='button' id='btnC' value='C' onclick='playNote("C")'>
 							<input type='button' id='btnD' value='D' onclick='playNote("D")'>
 							<input type='button' id='btnE' value='E' onclick='playNote("E")'>
@@ -30,9 +25,9 @@
 							<input type='button' id='btnG' value='G' onclick='playNote("G")'>
 							<input type='button' id='btnA' value='A' onclick='playNote("A")'>
 							<input type='button' id='btnB' value='B' onclick='playNote("B")'>
-						</div>
+						</form>
 					</div>
-				</form>
+				</div>
 			</div>
 		</section>
 	</div>

@@ -1,13 +1,10 @@
-// function to simplify calls to getElementById
-function id(x) {
-    return document.getElementById(x);
-}
-
+// play sound and change background colour when key clicked
 function playNote(val) {
-    key(val)
-    id('screen').value = val
+		key(val)
+		colour(val)
 }
 
+// find audio file to match key clicked
 function key(val) {
     if (val === 'C') {new Audio("sounds/c.mp3").play()}
     else if (val === 'D') {new Audio("sounds/d.mp3").play()}
@@ -16,4 +13,9 @@ function key(val) {
     else if (val === 'G') {new Audio("sounds/g.mp3").play()}
     else if (val === 'A') {new Audio("sounds/a.mp3").play()}
     else if (val === 'B') {new Audio("sounds/b.mp3").play()}
+}
+
+// set the class to change the background colour
+function colour(val) {
+	document.body.className = val
 }

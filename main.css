@@ -5,6 +5,15 @@ body {
 		text-align: center;
 	}
 
+/* overwrite skeleton CSS */
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+}
+
 .keyboard {
 	width: 375px;
 	margin: 0 auto;
@@ -19,7 +28,7 @@ body {
 /* overwrite skeleton CSS */
 input[type="button"] {
 	height: 150px;
-	width: 30px;
+	width: 40px;
 	padding: 0 5px;
 }
 
